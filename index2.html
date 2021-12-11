@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Select Box</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: dodgerblue;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box select{
+            background: #0563af;
+            color: #fff;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            border: none;
+            font-size: 20px;
+            -webkit-appearance: button;
+        }
+        .box:before{
+            content: '\f358';
+            font-family: font Awesome 5 free;
+            font-size: 28px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: #007ce0;            
+            pointer-events: none;
+        }
+        .box:hover:before {
+            background: #0472ca;
+            box-shadow: 5px 5px 15px rgb(154, 161, 168);
+        }
+        .box:hover{
+            box-shadow: 5px 5px 15px rgb(154, 161, 168);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <select name="" id="">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+        <option value="">Option 5</option>
+    </select>
+</div>
+    
+</body>
+</html>

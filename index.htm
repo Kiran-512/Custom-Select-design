@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Box</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: dodgerblue;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        select{
+            height: 8vh;
+            width: 20vw;
+            background-color: rgb(34, 83, 156);
+            padding: 10px;
+            margin-left: 15px;
+            border-radius: 15px;
+        }
+        select:hover{
+            background-color: dodgerblue;
+            box-shadow: 0px 0px 10px rgb(115, 137, 158);
+        }
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+            <select name="Select" id="custom">
+                <option value="">Select</option>
+                <optgroup disabled>Option 1</optgroup>
+                <option value="">Option 1.1</option>
+                <option value="">Option 1.2</option>
+                <option value="">Option 1.3</option>
+                <option value="">Option 1.4</option>
+                <optgroup enabled>Option 2</optgroup>
+                <option value="">Option 2.1 </option>
+                <option value="">Option 2.2</option>
+                <option value="">Option 2.3</option>
+
+            </select>
+
+        </div>
+
+</body>
+</html>

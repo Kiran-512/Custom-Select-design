@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .wrapper{
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }  
+        .container{
+            height: 40vh;
+            width: 30vw;
+            text-align: center;
+            line-height: 40vh;
+            border: 1px solid saddlebrown;
+            background-color: dodgerblue;
+            padding-top: 40px;
+            /* position: relative; */
+            /* clip-path: rect(11px, 10px, 5px, 6px); */
+            /* clip-path:polygon(50% 0 , 0 100%, 100% 100%) */
+            /* clip-path: inset(10px 10px 50px 5px); */
+            /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+            clip-path: ellipse(10% 25% at 50% 50%);
+ }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">Hello</div>
+</div>
+</body>
+</html>
